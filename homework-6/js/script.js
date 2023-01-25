@@ -17,25 +17,19 @@ function abs(x){
 }
 console.log(abs(-100))
 
-function floor(k,l){
-    if((k % l) > 5){
-        return k
-    }else if((k % l) == 0){
-        return k
-    }else
-    return k
+function floor(k){
+    if (k >0){
+  return k - (k % 1)
+    }else {
+        return (-1 + (k -(k % 1)))
+    }
 }
 console.log(floor(-5.8))
 
-function ceil(m, n){
-    if((m % n) > 5){
-        return n
-    }else if((m % n) == 0){
-        return n
-    }else
-    return n
+function ceil(m){
+    return (1 + (m - (m % 1)))
 }
-console.log(ceil(4.1))
+console.log(ceil(4.9))
 
 function round(a){
     return a.toFixed(0)
