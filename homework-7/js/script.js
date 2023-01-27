@@ -1,3 +1,4 @@
+//KArtalar raqamlarini tekshiruvchi kod
 let cardNumber = '9860657899945645'
 function checkNumber(){
 if (cardNumber.startsWith('8600') && cardNumber.length == 16){
@@ -13,9 +14,18 @@ if (cardNumber.startsWith('8600') && cardNumber.length == 16){
     console.log('That was Wrong')
 }}
 checkNumber()
+//ismning bosh harfini katta harfga aylantiruvchi kod
  let name = 'javlon'
  function checkFirstletter(){
 console.log(name[0].toUpperCase() + name.substring(1)) 
 ;
  }
  checkFirstletter()
+
+//stringda berilgan qiymatni 17 amrta takrorlovchi kod
+let str = 'Samandar '
+function repeatStr (){
+return str.repeat(17)
+// return str.toUpperCase(s)
+}
+console.log(repeatStr())
