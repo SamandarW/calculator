@@ -1,6 +1,5 @@
 //KArtalar raqamlarini tekshiruvchi kod
-let cardNumber = '9860657899945645'
-function checkNumber(){
+function checkNumber(cardNumber){
 if (cardNumber.startsWith('8600') && cardNumber.length == 16){
     console.log('Good Job :)')
     console.log(cardNumber.slice(0,4) + '********' + cardNumber.slice(12,16))
@@ -13,7 +12,7 @@ if (cardNumber.startsWith('8600') && cardNumber.length == 16){
 }else{
     console.log('That was Wrong')
 }}
-checkNumber()
+checkNumber('9860657899945645')
 //ismning bosh harfini katta harfga aylantiruvchi kod
  let name = 'javlon'
  function checkFirstletter(){
