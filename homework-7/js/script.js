@@ -13,3 +13,9 @@ if (cardNumber.startsWith('8600') && cardNumber.length == 16){
     console.log('That was Wrong')
 }}
 checkNumber()
+ let name = 'javlon'
+ function checkFirstletter(){
+console.log(name[0].toUpperCase() + name.substring(1)) 
+;
+ }
+ checkFirstletter()
